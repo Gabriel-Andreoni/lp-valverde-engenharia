@@ -360,7 +360,7 @@
 
 }
 
-@media (width <= 380px) {
+@media (width <= 767px) {
     .logo-wrapper {
         display: none !important;
 
