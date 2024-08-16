@@ -8,8 +8,10 @@ import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import EngineeringIcon from '@mui/icons-material/Engineering';
 import BuildIcon from '@mui/icons-material/Build';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 import AboutFloatImage from '../../../public/float-image.png';
+import AboutFeatureImage from '../../../public/about-list-image.jpg'
 import AboutIcon from '../../../public/about-icon.png';
 
 
@@ -91,15 +93,20 @@ export function AboutSection() {
                     <div className="about-list-wrapper">
                         <div className="about-list">
                             <ul>
-                                <li>Compromisso com a Excelência</li>
-                                <li>Precisão Técnica</li>
-                                <li>Agilidade na Resolução</li>
+                                <li>
+                                    <CheckCircleIcon />
+                                    Compromisso com a Excelência</li>
+                                <li>
+                                    <CheckCircleIcon />
+                                    Precisão Técnica</li>
+                                <li>
+                                    <CheckCircleIcon />
+                                    Agilidade na Resolução</li>
                             </ul>
 
                             <button>Faça uma vistoria</button>
                         </div>
                         <div className="about-list-image">
-
                         </div>
                     </div>
                 </div>

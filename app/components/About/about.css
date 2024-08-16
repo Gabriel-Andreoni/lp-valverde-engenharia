@@ -261,6 +261,7 @@
                     width: 100%;
 
                     display: flex;
+                    justify-content: space-between;
 
                     .about-list {
                         width: 50%;
@@ -279,6 +280,9 @@
                             & > li {
                                 margin-top: 18px;
                                 margin-right: -10px;
+
+                                display: flex;
+                                align-items: center;
     
                                 font-size: 1em;
                                 font-weight: 500;
@@ -287,13 +291,25 @@
                                 list-style: none;
 
                                 color: #7D8081;
+
+                                &:hover > svg {
+                                    color: #232728;
+                                }
+
+                                & > svg {
+                                    margin-right: 8px;
+
+                                    color: #CA4445;
+
+                                    transition: color 500ms ease-in-out;
+                                }
                             }
                         }
 
 
                         & button {
                             margin-top: 47px;
-                            padding: 25px 40px;
+                            padding: 19px 40px;
 
                             border: 0;
 
@@ -340,6 +356,19 @@
                                 }
                             }
                         }
+                    }
+
+                    .about-list-image {
+                        width: 273px;
+                        height: 188px;
+                        
+                        margin-top: 30px;
+
+                        display: block;
+
+                        background-image: url('../../../public/about-list-image.jpg');
+                        background-size: cover;
+                        background-position: center;
                     }
                 }
             }
