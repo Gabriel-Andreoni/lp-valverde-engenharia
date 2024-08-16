@@ -1,9 +1,17 @@
+import Image from 'next/image';
+
 import './about.css';
 
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import EventNoteIcon from '@mui/icons-material/EventNote';
 import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import VerifiedIcon from '@mui/icons-material/Verified';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import BuildIcon from '@mui/icons-material/Build';
+
+import AboutFloatImage from '../../../public/float-image.png';
+import AboutIcon from '../../../public/about-icon.png';
+
 
 export function AboutCards() {
     return (
@@ -34,11 +42,80 @@ export function AboutCards() {
 }
 
 
+export function AboutSection() {
+    return (
+        <div className="about-wrapper">
+            <div className="about-section">
+                <div className="about-image">
+                    <div className="about-second-image">
+                    </div>
+                    <Image src={AboutFloatImage} alt="imagem de um extintor de incêndio" width="181" height="286" />
+                </div>
+                <div className="about-content">
+                    <div className="about-content-top">
+                        <h6>
+                            <Image src={AboutIcon} alt="ícone da seção sobre" width="20" height="23" />
+                            Sobre nós
+                        </h6>
+
+                        <h3>
+                            Por Que Escolher a Valverde Engenharia?
+                        </h3>
+
+                        <p>
+                            Nossa equipe é composta por engenheiros altamente qualificados, com vasta experiência em segurança contra incêndios e normas regulatórias.
+                        </p>
+
+                        <p>
+                            Entendemos que cada estabelecimento é único. Oferecemos soluções personalizadas que atendem às suas necessidades específicas.
+
+                        </p>
+                    </div>
+
+                    <div className="about-feature">
+                        <div className="about-feature-item">
+                            <div className="about-feature-icon">
+                                <EngineeringIcon />
+                            </div>
+                            <h4 className="about-feature-title">Anos de experiência</h4>
+                        </div>
+                        <div className="about-feature-item">
+                            <div className="about-feature-icon">
+                                <BuildIcon />
+                            </div>
+                            <h4 className="about-feature-title">Soluções Sob Medida</h4>
+
+                        </div>
+                    </div>
+
+                    <div className="about-list-wrapper">
+                        <div className="about-list">
+                            <ul>
+                                <li>Compromisso com a Excelência</li>
+                                <li>Precisão Técnica</li>
+                                <li>Agilidade na Resolução</li>
+                            </ul>
+
+                            <button>Faça uma vistoria</button>
+                        </div>
+                        <div className="about-list-image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
 
 export default function About() {
     return (
         <section className="about-container">
             <AboutCards />
+
+            <AboutSection />
         </section>
     )
 }
