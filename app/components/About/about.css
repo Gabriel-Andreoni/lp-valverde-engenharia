@@ -310,10 +310,11 @@
                         & button {
                             margin-top: 47px;
                             padding: 19px 40px;
-
+ 
                             border: 0;
 
                             text-transform: uppercase;
+                            font-variant-caps: all-small-caps;
 
                             font-size: 1.1em;
                             font-weight: 700;
