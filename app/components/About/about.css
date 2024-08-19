@@ -106,28 +106,24 @@
                 width: 50%;
                 height: 100%;
 
-                background-image: url('../../../public/about-image-left.jpg');
-                background-repeat: no-repeat;
-                background-size: 70%;
-                background-position: left;
-
                 position: relative;
 
                 &::after {
-                    content: '';
+                    content: "";
 
-                    display: block;
-
-                    width: 30px;
-                    height: 450px;
-
-                    background-image: linear-gradient(to bottom, #CA4445, transparent);
+                    width: 24px;
+                    height: 361px;
 
                     position: absolute;
-                    top: 30px;
-                    right: 120px;
+                    right: 90px;
+                    top: 0%;
 
-                    animation: bounce 4s ease-in-out infinite;
+                    animation-timeline: auto;
+                    animation-range-start: normal;
+                    animation-range-end: normal;
+
+                    background: linear-gradient(rgb(202, 68, 69) 0%, rgba(202, 68, 69, 0) 100%);
+                    animation: 4s ease-in-out 0s infinite normal none running topBottom;
                 }
 
                 .about-second-image {
@@ -137,20 +133,24 @@
                     display: block;
 
                     position: absolute;
-                    top: 70%;
-                    right: 20%;
+                    top: 51%;
+                    right: 10%;
 
                     background-image: url('../../../public/about-second-image.jpg');
                     background-size: cover;
                     background-position: center;
                 }
 
-                & img {
+                & img:not(.about-main-image) {
                     position: absolute;
-                    top: 70%;
-                    left: -50px;
+                    left: -60px;
+                    bottom: 130px;
 
-                    animation: topBottom 4s ease-in-out infinite;
+                    animation-timeline: auto;
+                    animation-range-start: normal;
+                    animation-range-end: normal;
+
+                    animation: 4s ease-in-out 0s infinite normal none running bounce;
                 }
             }
 
@@ -264,12 +264,12 @@
                     justify-content: space-between;
 
                     .about-list {
-                        width: 50%;
+                        width: 100%;
 
                         display: flex;
                         flex-direction: column;
 
-                        & > ul {
+                        &>ul {
                             width: 100%;
 
                             display: flex;
@@ -277,26 +277,26 @@
 
                             list-style: none;
 
-                            & > li {
+                            &>li {
                                 margin-top: 18px;
                                 margin-right: -10px;
 
                                 display: flex;
                                 align-items: center;
-    
+
                                 font-size: 1em;
                                 font-weight: 500;
                                 line-height: 19px;
-    
+
                                 list-style: none;
 
                                 color: #7D8081;
 
-                                &:hover > svg {
+                                &:hover>svg {
                                     color: #232728;
                                 }
 
-                                & > svg {
+                                &>svg {
                                     margin-right: 8px;
 
                                     color: #CA4445;
@@ -310,7 +310,7 @@
                         & button {
                             margin-top: 47px;
                             padding: 19px 40px;
- 
+
                             border: 0;
 
                             text-transform: uppercase;
@@ -358,19 +358,6 @@
                             }
                         }
                     }
-
-                    .about-list-image {
-                        width: 273px;
-                        height: 188px;
-                        
-                        margin-top: 30px;
-
-                        display: block;
-
-                        background-image: url('../../../public/about-list-image.jpg');
-                        background-size: cover;
-                        background-position: center;
-                    }
                 }
             }
         }
@@ -381,28 +368,105 @@
 
 @keyframes bounce {
     0% {
-        top: 30px;
+        transform: translateY(-10px);
     }
-
-    50% {
-        top: 100px;
+ 
+    60% {
+        transform: translateY(0px);
     }
-
+   
     100% {
-        top: 30px;
+        transform: translateY(-10px);
     }
 }
 
 @keyframes topBottom {
     0% {
-        transform: translateY(-10px);
+        transform: scaleY(0.8);
     }
 
-    60% {
-        transform: translateY(0px);
+    50% {
+        transform: scaleY(1);
     }
 
     100% {
-        transform: translateY(-10px);
+        transform: scaleY(0.8);
     }
+}
+
+@media (width <=1024px) {
+
+    .about-image {
+        margin-right: 50px !important;
+
+        & img:not(.about-main-image) {
+            display: none !important;
+        }
+    }
+
+    .about-image::after {
+        display: none;
+    }
+
+    .about-image > img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .about-second-image {
+        display: none !important;
+    }
+
+    .about-content-top{
+        margin: 0 !important;
+
+        & > h3 {
+            font-size: 35px !important;
+        }
+
+        & > p:last-child {
+            margin-bottom: 20px !important;
+        }
+    }
+
+    .about-feature-item {
+        gap: 10px !important;
+
+        .about-feature-icon {
+            width: 60px !important;
+            height: 60px !important;
+
+            & > svg {
+                font-size: 30px !important
+            }
+        }
+
+    }
+}
+
+@media (width <= 767px) {
+    .about-cards-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .about-card {
+            width: 100% !important;
+        }
+    }
+
+    .about-section {
+        flex-direction: column;
+
+        .about-image {
+            width: 100% !important;
+
+            margin: 0 !important;
+        }
+    }
+
+    .about-content {
+        width: 100% !important;
+    }
+    
+
 }

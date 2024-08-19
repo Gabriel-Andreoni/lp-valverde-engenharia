@@ -12,6 +12,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 import AboutFloatImage from '../../../public/float-image.png';
 import AboutFeatureImage from '../../../public/about-list-image.jpg'
+import AboutImage from '../../../public/about-image-left.png'
 import AboutIcon from '../../../public/about-icon.png';
 
 
@@ -49,6 +50,7 @@ export function AboutSection() {
         <div className="about-wrapper">
             <div className="about-section">
                 <div className="about-image">
+                    <Image className="about-main-image" src={AboutImage} alt="imagem de um bombeiro" width="470" height="590" />
                     <div className="about-second-image">
                     </div>
                     <Image src={AboutFloatImage} alt="imagem de um extintor de incêndio" width="181" height="286" />
@@ -105,8 +107,6 @@ export function AboutSection() {
                             </ul>
 
                             <button>Faça uma vistoria</button>
-                        </div>
-                        <div className="about-list-image">
                         </div>
                     </div>
                 </div>
