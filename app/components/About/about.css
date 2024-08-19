@@ -466,6 +466,12 @@
 
     .about-content {
         width: 100% !important;
+
+        .about-content-top {
+            & > h6 {
+                margin: 10px 0 !important;
+            }
+        }
     }
     
 
