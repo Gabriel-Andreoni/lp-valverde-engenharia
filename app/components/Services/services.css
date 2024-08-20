@@ -136,10 +136,6 @@
 
 @media (width <= 767px) {
     .services-container {
-        .services-card:nth-child(1) {
-            margin: 4em 0 !important;
-        }
-
         .services-card {
             padding: 0 !important;
 
