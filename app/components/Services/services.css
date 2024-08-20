@@ -137,7 +137,7 @@
 @media (width <= 767px) {
     .services-container {
         margin-bottom: 0 !important;
-        
+
         .services-card {
             padding: 0 !important;
 
@@ -147,10 +147,13 @@
                 height: 100% !important;
 
                 & > p {
-                    margin-top: 20em !important;
+                    margin-top: 15em !important;
                     padding-bottom: 50px !important;
 
                     width: 90% !important;
+
+                    font-size: 22px !important;
+                    font-variant-caps: all-small-caps;
                 }
             }
     
@@ -165,7 +168,7 @@
             &:nth-child(2) {
                 .service-content {
                     & > p {
-                        margin-top: 16em !important;
+                        margin-top: 11em !important;
                     }
                 }
             }
