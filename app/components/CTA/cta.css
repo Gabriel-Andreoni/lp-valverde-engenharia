@@ -96,26 +96,31 @@
 }
 
 @media (width <= 767px) {
-    .cta-content {
-        width: 95% !important;
+    .cta-container {
+        margin: 0 !important;
 
-        margin: 0 18px !important;
-
-        overflow: hidden;
-
-        & > h3 {
-            width: 100%;
-
-            font-size: 35px !important;
-            text-wrap: wrap !important;
-        }
-
-        & > p {
-            width: 80% !important;
-        }
-        
-        & > button {
-            font-size: 1em !important;
+        .cta-content {
+            width: 95% !important;
+    
+            margin: 0 18px !important;
+    
+            overflow: hidden;
+    
+            & > h3 {
+                width: 100%;
+    
+                font-size: 35px !important;
+                text-wrap: wrap !important;
+            }
+    
+            & > p {
+                width: 80% !important;
+            }
+            
+            & > button {
+                font-size: 1em !important;
+            }
         }
     }
+   
 }
