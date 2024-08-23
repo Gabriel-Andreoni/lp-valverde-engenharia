@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 115px;
-
     background-color: #232728;
 
     .services-card {
