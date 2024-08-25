@@ -161,3 +161,48 @@
         background-size: 100%;
     }
 }
+
+@keyframes bgSlideTablet {
+    0% {
+        background-size: 120%;
+    }
+    
+    50% {
+        background-size: 200%;
+    }
+
+    100% {
+        background-size: 120%;
+    }
+}
+
+@media (width <= 1024px) {
+    .footer-overlay {
+        background-position: top !important;
+
+        animation: bgSlideTablet 15s ease-in-out infinite !important;
+    }
+
+    .footer-content-wrapper {
+        width: 90% !important;
+    }
+
+    .footer-content {
+        width: 100% !important;
+    }
+}
+
+@media (width <= 767px) {
+    .footer-overlay {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .footer-content-wrapper {
+        padding: 30px 0 !important;
+
+        flex-direction: column;
+        gap: 40px;
+
+    }
+}

@@ -6,7 +6,6 @@ export default function Services() {
     return (
         <section className="services-container">
             <div className="services-left">
-
             </div>
             <div className="services-card-right">
                 <div className="services-card">

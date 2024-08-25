@@ -90,8 +90,13 @@
     .cta-container {
         width: 100%;
 
-        margin: 120px 0;
+        margin-top: 120px;
 
+        .cta-content {
+            width: 90% !important;
+
+            margin: 0 auto !important;
+        }
     }
 }
 
