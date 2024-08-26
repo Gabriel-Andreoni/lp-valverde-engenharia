@@ -396,7 +396,11 @@
             margin-left: 1.5em !important;
             padding: 20px 30px !important;
 
-            color: #fff !important;
+            color: #000 !important;
+
+            &:hover {
+                color: #fff;
+            }
         }
     }
 }
