@@ -125,7 +125,11 @@
             & > button {
                 font-size: 1em !important;
 
-                color: #fff !important;
+                color: #1b090990 !important;
+
+                &:hover {
+                    color: #fff;
+                }
             }
         }
     }
