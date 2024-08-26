@@ -128,7 +128,7 @@
                 color: #232728 !important;
 
                 &:hover {
-                    color: #fff;
+                    color: #fff !important;
                 }
             }
         }
