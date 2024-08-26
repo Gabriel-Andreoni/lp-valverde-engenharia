@@ -124,6 +124,8 @@
             
             & > button {
                 font-size: 1em !important;
+
+                color: #fff !important;
             }
         }
     }
