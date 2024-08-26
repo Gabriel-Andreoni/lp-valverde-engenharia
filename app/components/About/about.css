@@ -394,6 +394,36 @@
     }
 }
 
+@media (width <= 3440px) {
+    .about-cards-wrapper{
+        max-width: 1200px !important;
+        
+        margin: 0 auto !important;
+    }
+
+    .about-section  {
+        max-width: 1200px !important;
+        height: auto !important;
+
+        margin: 0 auto !important;
+        margin-bottom: 300px !important;
+
+    }
+
+    .about-second-image {
+        top: 70% !important;
+    }
+
+    .about-image {
+        & img:not(.about-main-image) {
+            bottom: -16% !important;
+        }
+
+    }
+
+    
+}
+
 @media (width <=1024px) {
 
     .about-section {
