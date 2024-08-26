@@ -19,23 +19,23 @@ import AboutIcon from '../../../public/about-icon.png';
 export function AboutCards() {
     return (
         <ul className="about-cards-wrapper">
-            <li className="about-card">
+            <li className="about-card" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-in-out">
                 <AssessmentIcon className="icon-card" />
                 <h2>Avaliação Preliminar</h2>
                 <p>Realizamos uma inspeção detalhada do seu estabelecimento para identificar quaisquer não conformidades com as normas de segurança contra incêndio. </p>
             </li>
-            <li className="about-card">
+            <li className="about-card" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
                 <EventNoteIcon className="icon-card" />
                 <h2>Planejamento e Projeto</h2>
                 <p>Com base na avaliação preliminar, desenvolvemos um plano de ação personalizado para abordar e corrigir quaisquer deficiências.</p>
             </li>
-            <li className="about-card">
+            <li className="about-card" data-aos="fade-up" data-aos-duration="550" data-aos-easing="ease-in-out">
                 <TrackChangesIcon className="icon-card" />
                 <h2>Execução e Acompanhamento</h2>
                 <p>Nossa equipe conduzirá todas as intervenções necessárias para garantir que seu estabelecimento atenda ou supere as normas de segurança.</p>
             </li>
 
-            <li className="about-card">
+            <li className="about-card" data-aos="fade-down" data-aos-duration="600" data-aos-easing="ease-in-out">
                 <VerifiedIcon className="icon-card" />
                 <h2>Documentação e Certificação</h2>
                 <p>Cuidamos de toda a documentação necessária para a obtenção do AVCB ou CLCB, incluindo plantas, laudos técnicos e relatórios de inspeção.</p>
@@ -49,13 +49,13 @@ export function AboutSection() {
     return (
         <div className="about-wrapper">
             <div className="about-section">
-                <div className="about-image">
+                <div className="about-image" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-in-out">
                     <Image className="about-main-image" src={AboutImage} alt="imagem de um bombeiro" width="470" height="590" />
                     <div className="about-second-image">
                     </div>
                     <Image src={AboutFloatImage} alt="imagem de um extintor de incêndio" width="181" height="286" />
                 </div>
-                <div className="about-content">
+                <div className="about-content" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
                     <div className="about-content-top">
                         <h6>
                             <Image src={AboutIcon} alt="ícone da seção sobre" width="20" height="23" />

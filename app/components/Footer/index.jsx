@@ -9,13 +9,13 @@ export default function Footer() {
         <section className="footer-container">
             <div className="footer-overlay"></div>
             <div className="footer-content-wrapper">
-                <div className="footer-content">
+                <div className="footer-content" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-in-out">
                     <h2>Sobre nós</h2>
                     <p>Nossa equipe é composta por engenheiros altamente qualificados, com vasta experiência em segurança contra incêndios e normas regulatórias.
                     </p>
                 </div>
 
-                <div className="footer-content">
+                <div className="footer-content" data-aos="fade-down" data-aos-duration="450" data-aos-easing="ease-in-out">
                     <h2>Contato</h2>
                     <ul>
                         <li>
@@ -27,7 +27,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="footer-content">
+                <div className="footer-content" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
                     <h2>Links</h2>
                     <span>Home</span>
                     <span>Sobre Nós</span>
