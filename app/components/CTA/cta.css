@@ -90,7 +90,7 @@
     .cta-container {
         width: 100%;
 
-        margin-top: 120px;
+        margin: 120px 0 !important;
 
         .cta-content {
             width: 90% !important;
@@ -102,7 +102,7 @@
 
 @media (width <= 767px) {
     .cta-container {
-        margin: 0 !important;
+        margin: 80px 0 !important;
 
         .cta-content {
             width: 95% !important;
