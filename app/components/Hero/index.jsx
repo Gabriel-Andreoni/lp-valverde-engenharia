@@ -1,6 +1,7 @@
 "use client";
 
 import {useState, useEffect} from 'react';
+import Link from 'next/link';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,9 +26,15 @@ export function Menu() {
             <button className={`btn-mobile ${btnMobileActive ? 'active' : ''}`} onClick={() => setBtnMobileActive((prevState) => !prevState)}></button>
             <div className="menu-wrapper">
                 <ul className="menu-inner"  data-aos="fade-down" data-aos-delay="100">
-                    <li>Sobre-nós</li>
-                    <li>AVCB e CLCB</li>
-                    <li>Agende uma Consulta</li>
+                    <li>
+                        <Link href="#about">Sobre-nós</Link>
+                    </li>
+                    <li>
+                        <Link href="#services">AVCB e CLCB</Link>
+                    </li>
+                    <li>
+                        <Link href="#">Agende uma Consulta</Link>
+                    </li>
                 </ul>
             </div>
             <div className="adress-wrapper">

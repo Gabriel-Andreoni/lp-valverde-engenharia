@@ -47,7 +47,7 @@ export function AboutCards() {
 
 export function AboutSection() {
     return (
-        <div className="about-wrapper">
+        <div className="about-wrapper" id="about">
             <div className="about-section">
                 <div className="about-image" data-aos="fade-up" data-aos-duration="450" data-aos-easing="ease-in-out">
                     <Image className="about-main-image" src={AboutImage} alt="imagem de um bombeiro" width="470" height="590" />

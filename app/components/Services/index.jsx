@@ -4,7 +4,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 export default function Services() {
     return (
-        <section className="services-container">
+        <section className="services-container" id="services">
             <div className="services-left" data-aos="fade-right" data-aos-duration="450" data-aos-easing="ease-in-out">
             </div>
             <div className="services-card-right">
