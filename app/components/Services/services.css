@@ -87,7 +87,7 @@
     }
 
     .services-card-right {
-        padding-top: 60px !important;
+        padding-top: 0 !important;
 
         justify-content: flex-start !important;
 
