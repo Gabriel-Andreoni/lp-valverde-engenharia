@@ -102,6 +102,7 @@
 @media (width <= 767px) {
     .cta-container {
         margin: 80px 0 !important;
+        margin-bottom: 0px !important;
 
         .cta-content {
             width: 95% !important;

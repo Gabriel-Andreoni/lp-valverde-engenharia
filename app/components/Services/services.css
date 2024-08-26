@@ -108,7 +108,7 @@
 
 @media (width <= 767px) {
     .services-card-right {
-        padding: 0 10px !important; 
+        padding: 10px !important; 
 
         .services-card {
             width: 100% !important;
