@@ -19,7 +19,7 @@ export function Menu() {
     }, []);
 
     return (
-        <div className="menu-container">
+        <div className="menu-container" id="hero">
             <div className="logo-wrapper">
                 <Image src={LOGO} alt="logo da empresa" width="80" height="80" data-aos="fade-down" data-aos-easing="ease-in-out" />
             </div>

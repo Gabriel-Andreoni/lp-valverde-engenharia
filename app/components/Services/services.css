@@ -81,10 +81,10 @@
     }
 }
 
-@media (width <= 3440px) {
+@media (width >= 3440px) {
     .services-card-right  {
         padding-top: 200px !important;
-        
+
         justify-content: flex-start !important;
         gap: 100px !important;
     }

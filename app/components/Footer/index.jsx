@@ -1,5 +1,7 @@
 "use client";
 
+import Link from 'next/link';
+
 import './footer.css';
 
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
@@ -29,10 +31,9 @@ export default function Footer() {
 
                 <div className="footer-content" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease-in-out">
                     <h2>Links</h2>
-                    <span>Home</span>
-                    <span>Sobre Nós</span>
-                    <span>AVCB E CLCB</span>
-                    <span>Contato</span>
+                    <span><Link href="#hero">Home</Link></span>
+                    <span><Link href="#about">Sobre Nós</Link></span>
+                    <span><Link href="#services">AVCB E CLCB</Link></span>
                 </div>
             </div>
             <div className="footer-bottom">

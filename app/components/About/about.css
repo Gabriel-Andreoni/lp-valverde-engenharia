@@ -394,7 +394,7 @@
     }
 }
 
-@media (width <= 3440px) {
+@media (width >= 3440px) {
     .about-cards-wrapper{
         max-width: 1200px !important;
         
