@@ -402,6 +402,14 @@
 
     .adress-wrapper.adress-wrapper {
         width: 50% !important;
+
+        gap: 0 !important;
+
+        & > span {
+            font-size: 10px !important;
+
+            text-align: center !important;
+        }
     }
 
     .hero-body-content  {
