@@ -33,7 +33,7 @@ export function Menu() {
                         <Link href="#services">AVCB e CLCB</Link>
                     </li>
                     <li>
-                        <Link href="#">Agende uma Consulta</Link>
+                    <Link href="https://w.app/T8AxlD" target="_blank" rel="noopener noreferrer">Agende uma vistoria</Link>
                     </li>
                 </ul>
             </div>
