@@ -79,6 +79,19 @@
                 }
             }
 
+            & > a {
+                padding: 2em;
+
+                text-decoration: none;
+                transition: color 500ms ease;
+
+                color: #232728;
+            }
+
+            &:hover > a {
+                color: #FFF;
+            }
+
         }
     }
 

@@ -54,7 +54,7 @@ export function HeroBody() {
             <h1>Garanta a Segurança do Seu Estabelecimento</h1>
             <h3>Em um mundo onde a segurança nunca deve ser deixada para segundo plano, as normas do Corpo de Bombeiros não é apenas uma obrigação legal, é uma garantia de tranquilidade para você, seus funcionários e seus clientes.</h3>
             <button>
-                <Link href="https://w.app/T8AxlD" target="_blank" rel="noopener noreferrer">Faça uma vistoria</Link>
+                <Link href="https://w.app/T8AxlD" target="_blank" rel="noopener noreferrer">Agende uma vistoria</Link>
             </button> 
             </div>
         </div>

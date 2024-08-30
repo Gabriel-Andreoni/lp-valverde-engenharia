@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image';
 
 import './about.css';
@@ -14,6 +16,7 @@ import AboutFloatImage from '../../../public/float-image.png';
 import AboutFeatureImage from '../../../public/about-list-image.jpg'
 import AboutImage from '../../../public/about-image-left.png'
 import AboutIcon from '../../../public/about-icon.png';
+import Link from 'next/link';
 
 
 export function AboutCards() {
@@ -106,7 +109,9 @@ export function AboutSection() {
                                     Agilidade na Resolução</li>
                             </ul>
 
-                            <button>Faça uma vistoria</button>
+                            <button>
+                                <Link href="https://w.app/T8AxlD" target="_blank" rel="noopener noreferrer">Agende uma vistoria</Link>
+                            </button>
                         </div>
                     </div>
                 </div>

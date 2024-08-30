@@ -358,6 +358,14 @@
                                     height: 100%;
                                 }
                             }
+
+                            & > a {
+                                padding: 2em;
+            
+                                text-decoration: none;
+            
+                                color: #fff;
+                            }
                         }
                     }
                 }
