@@ -87,7 +87,7 @@
                         transition: opacity 500ms ease;
                     }
 
-                    & > a {
+                    &>a {
                         text-decoration: none;
                         color: #fff;
                     }
@@ -116,7 +116,7 @@
                 text-transform: uppercase;
                 font-weight: 500;
 
-                & > a {
+                &>a {
                     text-decoration: none;
 
                     color: #CA4445;
@@ -217,7 +217,7 @@
 
                 z-index: 10;
 
-                
+
 
                 &::after {
                     content: '';
@@ -246,7 +246,7 @@
                     }
                 }
 
-                & > a {
+                &>a {
                     padding: 2em;
 
                     text-decoration: none;
@@ -255,7 +255,7 @@
                     color: #232728;
                 }
 
-                &:hover > a {
+                &:hover>a {
                     color: #FFF;
                 }
 
@@ -341,7 +341,7 @@
                 flex-direction: column;
                 justify-content: center;
 
-                & > li:hover {
+                &>li:hover {
 
                     color: #232728;
                 }
@@ -353,31 +353,40 @@
 
             &>span {
                 margin: 0 auto !important;
+
+                &>a {
+                    width: 100%;
+
+                    display: block;
+                    
+                    text-align: center;
+                }
             }
         }
     }
-    
+
     .hero-body-container {
         height: 100vh !important;
     }
+
     .hero-body-content {
         margin-top: 4em !important;
 
         justify-content: flex-start !important;
 
-        & > h1 {
+        &>h1 {
             margin-top: 1em !important;
 
             font-size: 60px !important;
         }
 
-        & > h3 {
+        &>h3 {
             width: 65% !important;
 
             margin-left: 3.3em !important;
         }
 
-        & > button {
+        &>button {
             margin-left: 3.5em !important;
 
         }
@@ -385,7 +394,7 @@
 
 }
 
-@media (width <= 767px) {
+@media (width <=767px) {
     .logo-wrapper {
         display: none !important;
 
@@ -405,27 +414,27 @@
 
         gap: 0 !important;
 
-        & > span {
+        &>span {
             font-size: 10px !important;
 
             text-align: center !important;
         }
     }
 
-    .hero-body-content  {
+    .hero-body-content {
 
-        & > h1 {
+        &>h1 {
             font-size: 30px !important;
         }
 
-        & > h3 {
+        &>h3 {
             width: 80% !important;
 
             margin-left: 1.5em !important;
 
         }
 
-        & > button {
+        &>button {
             margin-left: 1.5em !important;
             padding: 20px 30px !important;
 
@@ -435,7 +444,7 @@
                 color: #fff !important;
             }
 
-            & > a {
+            &>a {
                 padding: 0 !important;
                 padding-inline: 10px !important;
             }
