@@ -434,6 +434,11 @@
             &:hover {
                 color: #fff !important;
             }
+
+            & > a {
+                padding: 0 !important;
+                padding-inline: 10px !important;
+            }
         }
     }
 }
