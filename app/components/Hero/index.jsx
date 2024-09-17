@@ -21,7 +21,7 @@ export function Menu() {
     return (
         <div className="menu-container" id="hero">
             <div className="logo-wrapper">
-                <Image src={LOGO} alt="logo da empresa" width="80" height="80" data-aos="fade-down" data-aos-easing="ease-in-out" />
+                <Image src={LOGO} alt="logo da empresa" width="100" height="50" data-aos="fade-down" data-aos-easing="ease-in-out" />
             </div>
             <button className={`btn-mobile ${btnMobileActive ? 'active' : ''}`} onClick={() => setBtnMobileActive((prevState) => !prevState)}></button>
             <div className="menu-wrapper">
