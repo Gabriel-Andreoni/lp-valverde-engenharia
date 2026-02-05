@@ -38,7 +38,11 @@ export function Menu() {
                 </ul>
             </div>
             <div className="adress-wrapper">
-                <span data-aos="fade-down" data-aos-easing="ease-in-out">(19) 98135-8414</span>
+                <span data-aos="fade-down" data-aos-easing="ease-in-out">
+                    <Link href="https://wa.me/5519981358414?text=Ol%C3%A1%2C%20tudo%20bem%3F%0AVim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20vistoria." target="_blank" rel="noopener noreferrer">
+                        (19) 98135-8414
+                    </Link>
+                </span>
                 <span data-aos="fade-down" data-aos-easing="ease-in-out">
                     <Link href="https://www.google.com.br/maps/place/R.+Dr.+Eraldo+Aur%C3%A9lio+Franzese,+71+-+02+-+Jardim+Paiquere,+Valinhos+-+SP,+13271-608/@-22.9829252,-47.0154353,17z/data=!3m1!4b1!4m5!3m4!1s0x94c8cdaec223f18d:0x3d18b1410b2cb866!8m2!3d-22.9829302!4d-47.0128604?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Rua doutor Eraldo Aurélio Franzese, 71 - Valinhos SP</Link>
                 </span>
